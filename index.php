@@ -29,12 +29,20 @@ $aluno = new Usuario("Aluno2", "!@#12");
 $aluno->insert();
 echo $aluno; */
 
-//update de registro no banco
-
+/*update de registro no banco
 $usuario = new Usuario();
 $usuario->loadById(6);
 $usuario->update("professor", "!@#$%¨&");
+echo $usuario;*/
 
+//Deletar um usuario
+
+$usuario = new Usuario();
+$usuario->loadById(6);
+$usuario->delete();
 echo $usuario;
+
+
+
 
 ?>
